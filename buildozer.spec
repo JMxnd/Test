@@ -2,6 +2,8 @@
 
 # (str) Title of your application
 title = My Application
+android.accept_sdk_license = True
+android.skip_update = False
 
 # (str) Package name
 package.name = myapp
