@@ -11,6 +11,16 @@ on:
       - data
       - gh-pages
 
+steps:
+  - name: Checkout the code
+    uses: actions/checkout@v2
+
+  - name: Set up Java
+    uses: actions/setup-java@v2
+    with:
+      java-version: 17
+      distribution: "temurin"
+
 jobs:
   # Build job. Builds app for Android with Buildozer
   build-android:
